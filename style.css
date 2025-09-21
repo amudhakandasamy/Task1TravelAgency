@@ -1,9 +1,13 @@
 :root{
+    --Font-black:#222222;
+    --Font-grey:#666666;
     --Orange-color : #FA7436;
     --White-color: #FFFFFF;
     --black-color: #222222;
-    
-
+    --bg-white:#F7F8FC;
+    --bg-white1:#FEFCFB;    
+    --light-grey:#999999;
+    --light-white: #E5E5E5;
 }
 
 
