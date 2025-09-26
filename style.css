@@ -20,6 +20,362 @@ body{
     font-family: "Poppins", sans-serif;
 }
 .wrapper{
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto ;
 }
+.btn{
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #FFFFFF;
+    display: inline-block;     
+    font-size: 16px;    
+}
+.btn.org{
+    background: var(--orange-color);
+}
+.btn.link{
+    text-decoration: none;
+    font-size: 16px;  
+    color: #FA7436;
+}    
+header{    
+    height: 100vh;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 1135px;
+    padding: 36px 0;
+    z-index: 100;
+    transition: all 500ms ease; /*anime*/
+   
+}
+nav .logo{
+    font-family: "volkhov", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    font-display:fallback;
+    color: #222222;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+}
+
+nav ul li a{
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+.header-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    color: #222222;
+    position: relative;    
+}
+h1{
+    font-family: "volkhov",sans-serif;
+    font-size:50px;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+h1 .fontOrg{
+    color:#FA7436;    
+}
+
+.header-section .left p{
+    font-weight: normal;
+    font-size: 16px;
+    color: #666666;
+    line-height: 200%;
+    margin-bottom: 30px;
+    width: 400px;
+}
+.haeader-section .left{
+    flex: 1;
+}
+.header-section .left .btn.link{
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #FA7436;    
+}
+.header-section .right{
+    align-self: flex-end;
+}
+.header-section .right img{
+    height: 500px;
+    vertical-align:middle
+}
+.searchbar{
+    display: flex; 
+    left: 20%;
+    top: 100px;           
+    width: 950px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color:#FFFFFF;
+    gap: 10px;          
+}
+.searchbar .searchdd{
+    font-weight: 400;
+    font: "volkhov", sans-serif;
+    color:#222222        
+}
+.searchbar .searchdd p{
+    font-weight: 300;
+    font: "volkhov", sans-serif;
+    color:#999999  
+}
+.todo-section{
+    background-color:#F7F8FC;
+    height: 80vh;
+    width: 100%;   
+}
+.todo-section .content{    
+    padding-top: 5PX;         
+    padding-left: 50px;
+    text-align: center;
+}
+.todo-section .content p{
+    text-align: center;
+    color:#666666;      
+}
+.todo{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;   
+}
+.todo .todobox{    
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    background-color:#FFFFFF;
+}
+.todo-section img{
+    height: 50px;
+    align-items: end;    
+}
+
+.deals-section{    
+    height: 80vh;
+    width: 100%;   
+}
+.deals-section .content{    
+    padding-top: 5PX;         
+    padding-left: 50px;
+    text-align: center;
+}
+.deals-section .content p{
+    text-align: center;
+    color:#666666;      
+}
+.dealscontainer{
+   display: flex;
+   flex-direction: row;    
+
+}
+.dealscontainer .dealsitem{    
+    padding: 10px;
+    margin-left: 10px;     
+    border-radius: 10%;        
+}
+.dealsitem .dealsimg{
+    height: 200px;
+    width: 230px;
+}
+.dealsSlider{
+    height: 30px;
+    width:40px;
+    margin-left: 45%;
+    padding-top: 10px;
+}
+.vacation-section{    
+    height: 90vh;
+    width: 100%;   
+}
+.vacation-section .content{    
+    padding-top: 5PX;         
+    padding-left: 50px;
+    text-align: center;
+}
+.vacation-section .content p{
+    text-align: center;
+    color:#666666;      
+}
+.vacation-container{
+   display: flex;
+   flex-direction: row; 
+   padding-left: 180px;
+
+}
+.vacation-container .vacation-item{    
+    padding: 10px;
+    margin-left: 10px;     
+    border-radius: 10%;
+    align-items: center;       
+}
+
+.vacation-item .vacationimg{
+    height: 200px;
+    width: 230px;
+}
+.pepole-section{    
+    height: 100vh;
+    width: 100%;   
+}
+.people-section .content{    
+    padding-top: 5PX;         
+    padding-left: 50px;
+    text-align: center;
+}
+.people-section .content p{
+    text-align: center;
+    color:#666666;   
+}
+    
+.blog-section h1{
+    align-items: center;
+    padding-left: 220px;
+}    
+.blog-container{
+   display: flex;
+   flex-direction: row; 
+   padding-left: 50px;
+}
+.blog-container .blog{    
+    padding: 1px;
+    padding-top: 30px;
+    margin-left: 10px;     
+    border-radius: 10%;
+    align-items: center; 
+
+}
+.blog-Slider{
+    height:10px;
+    width:30px;  
+    margin-left: 600px;  
+}
+
+.footer-section .footertop{
+    height: 390px;
+    width: 900px;
+    background-color: #FA7436;
+    margin-left: 150px;
+    border-radius: 10px;   
+}
+.footertop .footerHead{
+    color: #E5E5E5;
+    width: 700px;
+    padding-top: 50px;
+    padding-left: 140px;    
+    font-size: 50px;;
+    font-weight: 800;
+    text-align: center;
+    font-family: volkhov, sans-serif;
+}
+.footer-section .footertop .bgcircle img{
+    
+     width: 120px;
+}
+.footer-section .footertop form{        
+       margin-left: 200px;
+       padding-left: 10px;  
+       align-items: center; 
+       width: 500px;       
+       background-color:#FEFCFB;
+       border-radius: 5px;
+       position: relative;
+ }
+ .footertop form input{
+    font-family: "Poppins",sans-serif;
+    font-weight: normal;    
+    border: none;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    height: 50px;    
+    width: 300px;        
+ }
+.footertop form button{
+ position: absolute; 
+ border: none;
+ border-radius: 8px;
+ background: var(--orange-color);
+ font-family: "poppins", sans-serif; 
+ font-size: 16px;
+ cursor: pointer;
+ color: #f1efef;
+ margin: 10px;
+ padding: 5px;
+ }
+ 
+ .footerbottom{
+    display: flex;
+    height: 60vh;
+    width: 100%;     
+    padding-top: 50px;    
+    position: relative;
+  
+}
+
+.footerbottom .footerleft{
+    padding-left: 50px;
+    padding-top: 0px;
+  
+}
+.footerbottom .footerright {   
+    padding-left: 50px;    
+    width: 700px;
+    padding-top: 30px;
+
+}
+.footerbottom .footerright {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+ .footerbottom a{
+    text-decoration: none;
+    color:#999999;
+ }
+ .footerbottom .footerright .footerlist ul{
+    list-style: none;
+    padding-left: 20px;    
+ }
+ .footerbottom ul li {
+    margin: 16px 0;
+ }
+ .people-section {
+    display :flex;
+    height: 60vh;
+    width: 100%;     
+    padding-top: 50px;    
+    position: relative;
+  
+ }
+ .people-section .peopleleft{
+   padding-left: 10px;
+   position: absolute;
+
+ }
+  .people-section .peopleright{
+   padding-left: 10px;      
+   background-color:#F7F8FC;
+
+ }
